@@ -2,56 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Slides Template</title>
-        <link rel="stylesheet" href="./css/reveal.css">
-        <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
-        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <title>Provisioning AWS Infrastructure for Security and Continuous Delivery with Terraform</title>
+        <link rel="stylesheet" href="./css/reveal.min.css">
+        <link rel="stylesheet" href="./css/theme/devops.css" id="theme">
+        <link rel="stylesheet" href="./lib/css/zenburn.css">
         <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
-
+        <link rel="stylesheet" href="css/custom.css" id="custom">
+        <script>
+           document.write('<link rel="stylesheet" href="./css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+         </script>
     </head>
+
     <body>
+      <div class="reveal">
+        <div class="slides">
 
-        <div class="reveal">
-            <div class="slides"><section  data-markdown><script type="text/template">
-# Local
+          <section>
+            <h1>Provisioning AWS Infrastructure<br>for Security and Continuous Delivery<br>with Terraform and Elastic Beanstalk</h1>
+            <p>JAX DevOps, London 2018</p>
+            <img width="252" height="235" src="./img/devopslogo.jpg" alt="ITSS DEVOPS">
+            <p style="font-size: 28px;"><a href="#">@itssdevops</a></p>
+            <p style="font-size: 28px;"><a href="mailto:devops-admin@sminvestments.com">devops-admin@sminvestments.com</a></p>
+            <aside class="notes">
+            </aside>
+          </section>
 
-This will serve the presentation
-
-and open a browser to view it
-
-* clone the repo
-* edit the `slides.md` file
-* then:
-```
-npm install
-npm run presentation
-```
-
-<aside class="notes"><p>This is a speaker note, you need node 6.x installed</p>
-</aside></script></section><section ><section data-markdown><script type="text/template">
-
-# GitHub Pages
-
-* fork the repo
-* setup a build in travis for the fork - don't forget the env var with your personal access token
-* edit the `slides.md` file
-* push to github
-* view presentation on GitHub - in the project pages for your repo
-
-</script></section><section data-markdown><script type="text/template">
-
-# References
-
-* [reveal-md](https://github.com/webpro/reveal-md)
-* [reveal.js](http://lab.hakim.se/reveal-js)
-* [GitHub Pages](https://pages.github.com)
-* [Travis CI](https://travis-ci.org)
-* [This template](https://github.com/martinmurphy/slidestemplate)
-</script></section></section></div>
         </div>
 
         <script src="./lib/js/head.min.js"></script>
-        <script src="./js/reveal.js"></script>
+        <script src="./js/reveal.min.js"></script>
 
         <script>
             function extend() {
