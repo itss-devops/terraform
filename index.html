@@ -17,7 +17,7 @@
         <div class="slides">
           <!-- Page 1 -->
           <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
-            <h1>Provisioning AWS Infrastructure<br>for Security and Continuous Delivery<br>with Terraform</h1>
+            <h1>Provisioning AWS Infrastructure<br>for Continuous Delivery<br>with Terraform</h1>
             <p>ITSS DevOps, SMIC 2020</p>
             <img width="252" height="235" src="img/devopslogo.jpg" alt="ITSS DEVOPS">
             <p style="font-size: 28px;"><a href="#">@itssdevops</a></p>
@@ -25,6 +25,187 @@
             <aside class="notes">
             </aside>
           </section>
+
+          <!-- Let's Get Started -->
+          <section data-background-image="img/devs.jpg" style="width: 100%; height: 100%;">
+            <h1 class="layer">Let's Get Started!</h1>
+          </section>
+
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>What you need to know about <br> Infrastructure as Code</h1>
+            <br>
+              <ul class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Defined in code</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="2" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(92, 214, 92);">&nbsp;Stored in source code</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="3" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(204, 204, 0);">&nbsp;Declarative or Imperative</li>
+              </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Declarative or Imperative -->
+          <section data-background-video="../mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Declarative or Imperative</h1>
+            <br>
+            <div class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+              <h2> Make me a Taco </h2>
+              <img src="img/taco.png" width="500px" style="float: left; background:none; border:none; box-shadow:none; position: absolute; top: 52%; left: -20%;">
+            </div>
+            <ul>
+              <li class="fragment" style="font-size: 40px !important;">&nbsp;get shell</li>
+              <li class="fragment" style="font-size: 40px !important;">&nbsp;get beef</li>
+              <li class="fragment" style="font-size: 40px !important;">&nbsp;get cheese</li>
+              <li class="fragment" style="font-size: 40px !important;">&nbsp;get lettuce</li>
+              <li class="fragment" style="font-size: 40px !important;">&nbsp;get salsa</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Declarative or Imperative part 2 -->
+          <section data-background-video="../mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Declarative or Imperative</h1>
+            <br>
+            <h2> Make me a Taco </h2>
+            <img src="img/taco.png" width="500px" style="float: left; background:none; border:none; box-shadow:none; position: absolute; top: 52%; left: -20%;">
+            <pre>
+              <code data-trim contenteditable style="font-size: 40px; margin-top: 20px; max-height: 800px;">
+                food taco "bean-taco" {
+
+
+
+
+
+
+
+                }
+              </code>
+            </pre>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Declarative or Imperative part 3 -->
+          <section data-background-video="../mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Declarative or Imperative</h1>
+            <br>
+            <h2> Make me a Taco </h2>
+            <img src="img/taco.png" width="500px" style="float: left; background:none; border:none; box-shadow:none; position: absolute; top: 52%; left: -20%;">
+            <pre>
+              <code data-trim contenteditable style="font-size: 40px; margin-top: 20px; max-height: 800px;">
+                food taco "bean-taco" {
+
+                  ingredients = [
+
+                    "beef", "cheese", "salsa"
+
+                  ]
+
+                }
+              </code>
+            </pre>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- TERRAFORM-->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Terraform</h1>
+            <img width="235" height="235" src="img/tflogo.png" alt="Terraform">
+            <br>
+            <br>
+            <h2>is an example of a Declarative approach<br>in deploying Infrastructure as Code</h2>
+            <p style="font-size: 28px;">&nbsp;</p>
+            <p style="font-size: 28px;">&nbsp;</p>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- What does it do?-->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>What does it do?</h1>
+            <ul>
+              <li class="fragment" style="font-size: 50px !important;">Automated Deployment (takes the human out of the equation)</li>
+              <li class="fragment" style="font-size: 50px !important;">Consistent environments</li>
+              <li class="fragment" style="font-size: 50px !important;">Repeatable process</li>
+              <li class="fragment" style="font-size: 50px !important;">Reusable templates/components</li>
+              <li class="fragment" style="font-size: 50px !important;">Documented architecture</li>
+            </ul>
+            <p style="font-size: 28px;">&nbsp;</p>
+            <p style="font-size: 28px;">&nbsp;</p>
+            <img src="img/tflogo.png" width="300px" style="float: left; background:none; border:none; box-shadow:none; position: absolute; top: 52%; left: -20%;">
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Principle -->
+          <section data-background-video="../mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Developer's Principle</h1>
+            <img width="100%" height="80%" src="img/DRY.png" alt="Terraform">
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Summary -->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Summary</h1>
+            <ul>
+              <li class="fragment" style="font-size: 50px !important;">IaC isn't scary</li>
+              <li class="fragment" style="font-size: 50px !important;">Manual processes are the enemy</li>
+              <li class="fragment" style="font-size: 50px !important;">When in doubt, have a taco</li>
+              <li class="fragment" style="font-size: 50px !important;">Coming up next...</li>
+            </ul>
+            <p class="fragment" style="font-size: 40px; color:yellow"> - Deploy a Terraform Configuration</p>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Deploy Terraform -->
+          <section data-background-image="img/tf.png" style="width: 100%; height: 100%;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Deploying your first Terraform Configuration</h1>
+          </section>
+
+          <!-- Scenario-->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>The Scenario</h1>
+            <br>
+            <ul>
+              <li class="fragment" style="font-size: 50px !important;">Basic two-tier application</li>
+              <li class="fragment" style="font-size: 50px !important;">web front end</li>
+              <li class="fragment" style="font-size: 50px !important;">database back end</li>
+              <li class="fragment" style="font-size: 50px !important;">public DNS record</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <!-- Page 2 -->
           <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
@@ -111,31 +292,9 @@
             </aside>
           </section>
 
-          <!-- Page 6 -->
-          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
-            <h1>Terraform</h1>
-            <img width="235" height="235" src="img/tflogo.png" alt="Terraform">
-            <p style="font-size: 28px;">&nbsp;</p>
-            <p style="font-size: 28px;">&nbsp;</p>
-            <aside class="notes">
-            </aside>
-          </section>
 
-          <!-- Page 7 -->
-          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
-            <h1>What does it do?</h1>
-            <ul>
-              <li class="fragment">Documents (infrastructure as code)</li>
-              <li class="fragment">Plans (no surprises)</li>
-              <li class="fragment">Graphs (parallelizes where possible)</li>
-              <li class="fragment">Automates (takes the human out of the equation)</li>
-            </ul>
-            <p style="font-size: 28px;">&nbsp;</p>
-            <p style="font-size: 28px;">&nbsp;</p>
-            <img src="img/tflogo.png" width="300px" style="float: left; background:none; border:none; box-shadow:none; position: absolute; top: 52%; left: -20%;">
-            <aside class="notes">
-            </aside>
-          </section>
+
+
 
           <!-- Page 8 -->
           <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
@@ -192,7 +351,7 @@
           </section>
 
           <!-- Page 10 -->
-          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <!-- <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
             <h1>SaaS</h1>
             <h2><code>./app-infrastructure</code></h2>
             <ul>
@@ -207,11 +366,11 @@
             </ul>
             <aside class="notes">
             </aside>
-          </section>
+          </section> -->
 
 
           <!-- Page 11 -->
-          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <!-- <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
             <h2>Layout</h2>
             <pre>
               <code data-trim contenteditable style="font-size: 18px; margin-top: 20px; max-height: 1000px;">
@@ -228,11 +387,18 @@
               </code>
           </pre>
             <aside class="notes"></aside>
+          </section> -->
+
+
+
+          <!-- Install TF -->
+          <section>
+            <h1> Installing Terraform <h1>
           </section>
 
-          <section>
-            <h1>Let's Get Started!</h1>
-          </section>
+
+
+
 
         </div>
       </div>
@@ -301,8 +467,6 @@
                   return !!document.body.classList;
                 }
               }
-              // { src: '../plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-              // { src: '../plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
             ]
           });
         </script>
