@@ -7,17 +7,17 @@
         <link rel="stylesheet" href="./css/theme/devops.css" id="theme">
         <link rel="stylesheet" href="./lib/css/zenburn.css">
         <link rel="stylesheet" href="./css/custom.css" id="custom">
-        <script>
+        <!-- <script>
            document.write('<link rel="stylesheet" href="./css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
-         </script>
+         </script> -->
     </head>
 
     <body>
       <div class="reveal">
         <div class="slides">
-
+          <!-- Page 1 -->
           <section>
-            <h1>Provisioning AWS Infrastructure<br>for Security and Continuous Delivery<br>with Terraform and Elastic Beanstalk</h1>
+            <h1>Provisioning AWS Infrastructure<br>for Security and Continuous Delivery<br>with Terraform</h1>
             <p>ITSS DevOps, SMIC 2020</p>
             <img width="252" height="235" src="./img/devopslogo.jpg" alt="ITSS DEVOPS">
             <p style="font-size: 28px;"><a href="#">@itssdevops</a></p>
@@ -25,6 +25,64 @@
             <aside class="notes">
             </aside>
           </section>
+
+          <!-- Page 2 -->
+          <section>
+            <h1>Let the cloud vendor cover your *aaS</h1>
+              <ul class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>On premises</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="2" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>IaaS (host)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="3" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>PaaS (build)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="4" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>SaaS (consume)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Os</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+
+              <div class="mb-frame fragment"></div>
+
+              <aside class="notes">
+                <ul>
+                  <li>Security ”of” the cloud vs ”in” the cloud</li>
+                  <li>Iaas &rarr; PaaS and SaaS</li>
+                </ul>
+              </aside>
+         </section>
 
         </div>
       </div>
