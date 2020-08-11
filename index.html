@@ -180,7 +180,7 @@
       </section>
 
       <!-- Scenario-->
-      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+      <!-- <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
         <h1>The Scenario</h1>
         <br>
         <ul>
@@ -191,36 +191,12 @@
         </ul>
         <aside class="notes">
         </aside>
-      </section>
-
-      <!-- Components-->
-      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
-        <h1>Terraform Components</h1>
-        <br>
-        <ul class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
-          <h3>Terraform executable</h3>
-          <img width="235" height="235" src="img/executable.jpg" alt="Terraform">
-        </ul>
-        <ul class="fragment" data-fragment-index="2" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
-          <h3>Terraform files</h3>
-          <img width="235" height="235" src="img/tf-files.png" alt="Terraform">
-        </ul>
-        <ul class="fragment" data-fragment-index="3" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
-          <h3>Terraform plugins</h3>
-          <img width="235" height="235" src="img/executable.jpg" alt="Terraform">
-        </ul>
-        <ul class="fragment" data-fragment-index="4" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
-          <h3>Terraform state</h3>
-          <img width="235" height="235" src="img/tf-files.png" alt="Terraform">
-        </ul>
-        <aside class="notes">
-        </aside>
-      </section>
+      </section> -->
 
       <!-- Install Terraform -->
       <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
         <h1>Install Terraform</h1>
-        <br>
+          <p class="fragment">** Go to your AWS account; Open and create IDE (Cloud9) in Tokyo region</li>
         <div class="fragment">
           <h3>Download linux platform zipped file, unzip, move to /usr/local/bin</h3>
           <pre>
@@ -243,7 +219,30 @@
             </code>
           </pre>
         </div>
-        <h3 class="fragment">*** Create your directory "mkdir tf.terraform-[name]"</h3>
+          <p class="fragment">*** Create your directory "mkdir tf.terraform-[name]"</p>
+        <aside class="notes"></aside>
+      </section>
+
+      <!-- Components-->
+      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+        <h1>Terraform Components</h1>
+        <br>
+        <ul class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+          <h3>Terraform executable</h3>
+          <img width="235" height="235" src="img/executable.jpg" alt="Terraform">
+        </ul>
+        <ul class="fragment" data-fragment-index="2" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+          <h3>Terraform files</h3>
+          <img width="235" height="235" src="img/tf-files.png" alt="Terraform">
+        </ul>
+        <ul class="fragment" data-fragment-index="3" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+          <h3>Terraform plugins</h3>
+          <img width="235" height="235" src="img/executable.jpg" alt="Terraform">
+        </ul>
+        <ul class="fragment" data-fragment-index="4" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+          <h3>Terraform state</h3>
+          <img width="235" height="235" src="img/tf-files.png" alt="Terraform">
+        </ul>
         <aside class="notes">
         </aside>
       </section>
@@ -280,7 +279,7 @@
         </aside>
       </section>
       <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
-        <div class="fragment">
+        <!-- <div class="fragment">
           <h3>DATA</h3>
           <pre>
             <code data-trim contenteditable style="font-size: 20px; margin-top: 20px;">
@@ -291,7 +290,7 @@
               }
             </code>
           </pre>
-        </div>
+        </div> -->
         <div class="fragment">
           <h3>RESOURCE</h3>
           <pre>
@@ -317,30 +316,95 @@
         </aside>
       </section>
 
-      <!-- TERRAFORM-->
+      <!-- CONFIGURATION-->
       <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
         <h1>Configuration</h1>
         <img width="" height="800" src="img/1.png" alt="Configuration">
+        <div class="mb-frame-variables fragment"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/1.png" alt="Configuration">
+          <div class="mb-frame-providers"></div>
+        <aside class="notes"></aside>
+      </section>
+
+      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+        <h1>Configuration</h1>
+        <img width="" height="800" src="img/2.png" alt="Configuration">
+        <div class="mb-frame-resource fragment"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-resource2"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-vpc_id"></div>
+        <aside class="notes"></aside>
+      </section>
+
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-ingress"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-egress"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-instance"></div>
+        <aside class="notes"></aside>
+      </section>
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>Configuration</h1>
+          <img width="" height="800" src="img/2.png" alt="Configuration">
+          <div class="mb-frame-provisioner"></div>
+        <aside class="notes"></aside>
+      </section>
+      <!-- .tfvars -->
+      <section class="fragment" data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+          <h1>.tfvars</h1>
+          <img width="" height="800" src="img/tfvars.png" alt="Configuration">
+        <aside class="notes"></aside>
+      </section>
+
+      <!-- Deployment -->
+      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+        <h1>Deploying the Configuration</h1>
+        <div class="fragment">
+          <h3>Go to cloud9 of your aws account, region Tokyo!</h3>
+          <pre>
+            <code data-trim contenteditable style="font-size: 20px; margin-top: 20px;">
+              1. terraform init
+              2. terraform plan
+              3. terraform plan -out [name]].tfplan
+              4. terraform apply [name].tfplan
+              5. teraform destroy
+            </code>
+          </pre>
+        </div>
         <aside class="notes">
         </aside>
       </section>
 
-
-
-
-
       <!-- DEMO TIME-->
       <section data-background-image="img/demo.jpg" style="width: 100%; height: 100%;">
-        <h1 class="layer">DEMO TIME!</h1>
+        <h1 class="layer">LAB TIME!</h1>
         <br>
         <p id="demo" class="layer" style="font-size: 300px !important; color:yellow"></p>
       </section>
-
-
-
-
-
-
 
     </div>
   </div>

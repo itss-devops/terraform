@@ -247,3 +247,130 @@ section.layer h1 {
   top: 235px;
   box-shadow: inset 3px 3px 9px #b8feb6, 0 5px 7px #b8feb6;
 }
+
+.mb-frame-variables {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width: 900px;
+  height: 350px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 55px;
+  top: 250px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-providers {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width: 900px;
+  height: 320px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 55px;
+  top: 620px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+
+.mb-frame-resource {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 50px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  top: 240px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-resource2 {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 360px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  top: 290px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-vpc_id {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 30px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  top: 330px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-ingress {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 180px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  top: 355px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-egress {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 100px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  bottom: 365px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-instance {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 190px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  bottom: 170px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
+
+.mb-frame-provisioner {
+  display: block;
+  /* padding: 20px 100px 20px 20px; */
+  position: relative;
+  width:500px;
+  height: 100px;
+  /* border-radius: 10%; */
+  /* border-color: #feb6b8; */
+  position: absolute;
+  left: 400px;
+  bottom: 50px;
+  box-shadow: inset 2px 2px 8px red, 2px 2px 8px red;
+}
