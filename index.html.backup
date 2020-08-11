@@ -1,0 +1,190 @@
+
+
+          <!-- Page 2 -->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>Let the cloud vendor cover your *aaS</h1>
+              <ul class="fragment" data-fragment-index="1" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>On premises</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="2" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>IaaS (host)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="3" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>PaaS (build)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgb(51, 153, 255);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;OS</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+              <ul class="fragment" data-fragment-index="4" style="zoom:1; *display: inline; _height: 30px; list-style-type: none;">
+                <h3>SaaS (consume)</h3>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Applications</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Data</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Runtime</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Os</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Virtualization&nbsp;</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Servers</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Storage</li>
+                <li style="box-shadow: -5px 4px 25px rgba(255, 255, 255, 0.5); background: rgba(51, 153, 255, 0.5);">&nbsp;Network</li>
+              </ul>
+
+              <div class="mb-frame fragment"></div>
+
+              <aside class="notes">
+                <ul>
+                  <li>Security ”of” the cloud vs ”in” the cloud</li>
+                  <li>Iaas &rarr; PaaS and SaaS</li>
+                </ul>
+              </aside>
+          </section>
+
+          <!-- Page 3 -->
+          <section data-background-image="img/public-cloud.jpg" style="width: 100%; height: 100%;">
+            <h1 class="layer">Use <b>public</b> cloud!</h1>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Page 4 -->
+          <section data-background-image="img/aws-services.png" style="width: 100%; height: 100%;">
+            <div class="layer" style="position: relative; top: 40%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+              <h1>Use services</h1>
+              <h2>instead of rolling your own</h2>
+            </div>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Page 5 -->
+          <section data-background-video="mov/automate.mp4" data-background="#000000" style="width: 100%; height: 100%;">
+            <div style="position: relative; top: 40%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+              <h1>Automate against APIs</h1>
+              <h2>(no clicking in GUI or fiddling in prod)</h2>
+            </div>
+            <aside class="notes">Ó
+            </aside>
+          </section>
+
+
+
+
+
+          <!-- Page 8 -->
+          <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>IaaS</h1>
+            <ul>
+              <div class="fragment">
+                <h2><code>./infrastructure</code></h2>
+                <li>Networking</li>
+                <ul>
+                  <li>VPC</li>
+                  <li>Availability zones</li>
+                  <li>Public and private subnets</li>
+                  <li>Internet gateway</li>
+                  <li>NAT</li>
+                  <li>Security groups (FW rules)</li>
+                </ul>
+              </div>
+              <li class="fragment">Bastion host</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section>
+
+         <!-- Page 9 (layout) -->
+         <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+           <h2>Layout</h2>
+              <pre>
+                <code data-trim contenteditable style="font-size: 18px; margin-top: 20px; max-height: 1000px;">
+                ./infrastructure
+                ├── &lt;environment&gt;
+                │   ├── main.tf
+                │   └── vars.tf
+                └── modules
+                    ├── vpc
+                    │   ├── main.tf
+                    │   ├── outputs.tf
+                    │   └── vars.tf
+                    ├── subnets
+                    │   ├── main.tf
+                    │   ├── outputs.tf
+                    │   └── vars.tf
+                    ├── security-groups
+                    │   ├── main.tf
+                    │   └── vars.tf
+                    ├── instance
+                    │   ├── main.tf
+                    │   ├── outputs.tf
+                    │   └── vars.tf
+                    ├── ...
+                  </code>
+                </pre>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <!-- Page 10 -->
+          <!-- <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h1>SaaS</h1>
+            <h2><code>./app-infrastructure</code></h2>
+            <ul>
+              <li>RDS - Relational Database Service</li>
+              <li>Route53 (DNS)</li>
+              <li>Certificate Manager (SSL/TLS certificates)</li>
+              <li>EFS - Elastic File System (NFS)</li>
+              <li>S3 (Scalable storage)</li>
+              <li>CloudWatch (monitoring, events, logs)</li>
+              <li>CloudTrail (audit)</li>
+              <li>IAM (Identity &amp; Access Management)</li>
+            </ul>
+            <aside class="notes">
+            </aside>
+          </section> -->
+
+
+          <!-- Page 11 -->
+          <!-- <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+            <h2>Layout</h2>
+            <pre>
+              <code data-trim contenteditable style="font-size: 18px; margin-top: 20px; max-height: 1000px;">
+                ./app-infrastructure
+                └── modules
+                    ├── rds
+                    │   ├── main.tf
+                    │   ├── outputs.tf
+                    │   └── vars.tf
+                    └── security_groups
+                        ├── main.tf
+                        ├── outputs.tf
+                        └── vars.tf
+              </code>
+          </pre>
+            <aside class="notes"></aside>
+          </section> -->
+
+
+
+          <!-- Install TF -->
+          <section>
+            <h1> Installing Terraform <h1>
+          </section>
