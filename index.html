@@ -385,6 +385,109 @@
         <div class="fragment">
           <h3>Go to cloud9 of your aws account, region Tokyo!</h3>
           <pre>
+            <code data-trim contenteditable style="font-size: 20px; margin-top: 20px; max-height: 600px; !important">
+              terraform {
+                  required_version = ">= 0.12"
+                }
+
+                # ----------------------------------------------------------------------
+                # PROVIDERS
+                # ----------------------------------------------------------------------
+
+                provider "aws" {
+                  region = "ap-northeast-2"
+                }
+
+                # ----------------------------------------------------------------------
+                # RESOURCES
+                # ----------------------------------------------------------------------
+
+                # This uses the default VPC.  It WILL NOT delete it on destroy.
+                resource "aws_default_vpc" "default" {
+
+                }
+
+                # CREATE THE SECURITY GROUP THAT'S APPLIED TO THE EC2 INSTANCE
+                resource "aws_security_group" "allow_http" {
+                  name = "terraform-workshop"
+
+                  # Inbound HTTP from anywhere
+                  ingress {
+                    from_port   = var.server_port
+                    to_port     = var.server_port
+                    protocol    = "tcp"
+                    cidr_blocks = ["0.0.0.0/0"]
+                  }
+                  # Outbound
+                  egress {
+                    from_port   = var.server_port
+                    to_port     = var.server_port
+                    protocol    = "tcp"
+                    cidr_blocks = ["0.0.0.0/0"]
+                  }
+                }
+
+                resource "aws_instance" "workshop" {
+                  ami                    = "ami-0bd7691bf6470fe9c"
+                  instance_type          = "t2.micro"
+                  vpc_security_group_ids = [aws_security_group.allow_http.id]
+
+                  user_data = <<-EOF
+                              #!/bin/bash
+                              echo "Hello, World" > index.html
+                              nohup busybox httpd -f -p "${var.server_port}" &
+                              EOF
+
+                  tags = {
+                    Name = "terraform-workshop"
+                  }
+                }
+            </code>
+          </pre>
+          <p>Paste this block to your <b>workshop.tf</b> file</p>
+        </div>
+        <aside class="notes">
+        </aside>
+      </section>
+      <!-- Deployment -->
+      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+        <h1>Deploying the Configuration</h1>
+        <div class="fragment">
+          <pre>
+            <code data-trim contenteditable style="font-size: 20px; margin-top: 20px; max-height: 250px; !important">
+              # --------------------------------------------------------------------
+              # ENVIRONMENT VARIABLES
+              # Define these secrets as environment variables
+              # --------------------------------------------------------------------
+              variable "server_port" {
+                description = "The port the server will use for HTTP requests"
+                type        = number
+                default     = 80
+              }
+            </code>
+          </pre>
+          <p>Paste this block to your <b>variables.tf</b> file</p>
+        </div>
+        <div class="fragment">
+          <pre>
+            <code data-trim contenteditable style="font-size: 20px; margin-top: 20px; max-height: 150px; !important">
+              output "public_dns" {
+                value       = aws_instance.workshop.public_dns
+                description = "The public IP of the web server"
+              }
+            </code>
+          </pre>
+          <p>Paste this block to your <b>outputs.tf</b> file</p>
+        </div>
+        <aside class="notes">
+        </aside>
+      </section>
+      <!-- Deployment -->
+      <section data-background-video="./mov/bgvideo.mp4" data-background-video-loop="true" style="width: 100%; height: 100%;">
+        <h1>Deploying the Configuration</h1>
+        <div class="fragment">
+          <h3>Then we go through this process step by step.</h3>
+          <pre>
             <code data-trim contenteditable style="font-size: 20px; margin-top: 20px;">
               1. terraform init
               2. terraform plan
