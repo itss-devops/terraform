@@ -58,7 +58,7 @@ resource "aws_instance" "<putsomethinghere>" {
   ami                    = ami-0bd7691bf6470fe9c
   instance_type          = "t2.micro"
   key_name               = var.key_name
-  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
+  vpc_security_group_ids = [aws_security_group.<putsomethinghere>.id]
 
   connection {
     type        = "ssh"
