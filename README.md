@@ -19,12 +19,12 @@
 
 ***Altogether, we go thru these process step by step:***
      
-   1. ``` $ terraform init
+   1. ```$ terraform init
 
-   2. ``` $ terraform plan
+   2. ```$ terraform plan
 
-   3. ``` $ terraform plan -out [name-of-tfplan-file]
+   3. ```$ terraform plan -out [name-of-tfplan-file]
 
-   4. ``` $ terraform apply [name-of-tfplan-file]
+   4. ```$ terraform apply [name-of-tfplan-file]
 
-   5. ``` $ terraform destroy
+   5. ```$ terraform destroy
