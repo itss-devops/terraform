@@ -1,6 +1,6 @@
-# terraform
+# Deploying your Configuration
 
-1. Go to itss-devop account, Tokyo region.
+1. Go to itss-devops account, Tokyo region.
 
 2. Go to cloud9 and install terraform.
      ```
@@ -16,3 +16,15 @@
 4. Make a directory under ~/environment/
       ```
       $ mkdir [your-folder-name]
+
+***Altogether, we go thru these process step by step:***
+     ```
+     $ terraform init
+
+     $ terraform plan
+
+     $ terraform plan -out [name-of-tfplan-file]
+
+     $ terraform apply [name-of-tfplan-file]
+
+     $ terraform destroy
