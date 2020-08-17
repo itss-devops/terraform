@@ -18,13 +18,13 @@
       $ mkdir [your-folder-name]
 
 ***Altogether, we go thru these process step by step:***
-     ```
-     $ terraform init
+     
+   1. ``` $ terraform init
 
-     $ terraform plan
+   2. ``` $ terraform plan
 
-     $ terraform plan -out [name-of-tfplan-file]
+   3. ``` $ terraform plan -out [name-of-tfplan-file]
 
-     $ terraform apply [name-of-tfplan-file]
+   4. ``` $ terraform apply [name-of-tfplan-file]
 
-     $ terraform destroy
+   5. ``` $ terraform destroy
