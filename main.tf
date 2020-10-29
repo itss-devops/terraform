@@ -2,12 +2,17 @@ terraform {
   required_version = ">= 0.12"
 }
 
+locals {
+  vpc_id  = "vpc-0159b4c5552d3dc32"
+  env = "<enter your name>"
+}
+
 # ----------------------------------------------------------------------
 # PROVIDERS
 # ----------------------------------------------------------------------
 
 provider "aws" {
-  region = "[please input your region]"
+  region = "<input your region>"
 }
 
 # ----------------------------------------------------------------------
@@ -19,8 +24,8 @@ provider "aws" {
 resource "aws_default_vpc" "default" { }
 
 # CREATE THE SECURITY GROUP THAT'S APPLIED TO THE EC2 INSTANCE
-resource "aws_security_group" "[yourname]_allow_http" {
-  name = "terraform-workshop-[yourname]"
+resource "aws_security_group" "<yourname>_allow_http" {
+  name = "terraform-workshop-${local.env}"
 
   # Inbound HTTP from anywhere
   ingress {
@@ -31,7 +36,7 @@ resource "aws_security_group" "[yourname]_allow_http" {
   }
 }
 
-resource "aws_instance" "[yourname]-workshop" {
+resource "aws_instance" "${local.env}-workshop" {
   ami                    = "[choose your ami]"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_http.id]
@@ -43,6 +48,6 @@ resource "aws_instance" "[yourname]-workshop" {
               EOF
 
   tags = {
-    Name = "terraform-workshop-[yourname]"
+    Name = "terraform-workshop-${local.env}"
   }
 }
